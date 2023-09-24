@@ -21,7 +21,6 @@ function About() {
           database that is accessible only to the government and approved
           healthcare practitioners.
         </p>
-        <h1 className="text-4xl font-semibold mt-28 text-neutral-800">Team</h1>
       </div>
     </div>
   );
