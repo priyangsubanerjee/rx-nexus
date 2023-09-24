@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import Faq from "react-faq-component";
+import FAQ from "@/components/FAQ";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -100,6 +102,18 @@ export default function Home() {
               </button>
             </Link>
           </div>
+        </div>
+      </div>
+      <div className="p-16">
+        <h1 className="text-2xl font-semibold text-neutral-800">
+          Frequently Asked Questions
+        </h1>
+        <p className="text-xs text-slate-600 mt-2">
+          We strive to make our platform as easy to use as possible. If you have
+          any questions, please contact us at here.
+        </p>
+        <div className="mt-5">
+          <FAQ />
         </div>
       </div>
     </main>

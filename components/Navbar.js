@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
 
@@ -10,7 +11,7 @@ function Navbar() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="/about">About</a>
         </li>
         <li>
           <a href="#">Contact</a>
@@ -19,10 +20,17 @@ function Navbar() {
           <a href="#">Blog</a>
         </li>
       </ul>
-      <div>
-        <button className="bg-slate-100 text-slate-700 text-base h-12 px-5 rounded">
-          Raise an issue
-        </button>
+      <div className="flex items-center">
+        <img
+          src="https://static.toiimg.com/thumb/msid-103068370,width-1280,height-720,resizemode-4/.jpg"
+          alt=""
+          className="h-12"
+        />
+        <img
+          src="https://kiit.ac.in/wp-content/uploads/2022/10/KIIT-logo-HD.png"
+          alt=""
+          className="h-12 ml-6"
+        />
       </div>
     </nav>
   );
